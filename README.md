@@ -1,6 +1,6 @@
 # data_mining_cbr
 
-Here's a summary of the different Python scripts for web scraping data from the Central Bank of Russia website:
+Here's a summary of the different Python scripts for web scraping data from the Central Bank of Russia website according to this repo:
 
 1. PDF to CSV converter (```DM_pdfToExcel.ipynb```): This script uses the tabula library to convert PDF files into CSV format, merges all the CSV files into a single XLSX file, and then merges all the sheets within the XLSX file into one. This can be useful for anyone who needs to extract data from PDF files and analyze it in a spreadsheet.
 2. INN number scraper (```DM_cbr_finorg_parse.ipynb```): This script uses the BeautifulSoup and requests libraries to scrape data from the Central Bank of Russia's website. The user inputs a list of Taxpayer Identification Numbers (INN), which are then used to construct a list of URLs. The script fetches the HTML content of each URL, parses the tables with BeautifulSoup, and transforms them into DataFrames with pandas. The script outputs '1' if the table is not empty, '0' if it is, and 'error' if an exception is raised.
